@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <div class="flex">
+        <div id="card-container">
+            <!-- triangle card -->
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="/images/triangle.png" alt="triangle" /></figure>
+                <div class="card-body">
+                  <h2 class="card-title">Triangle</h2>
+                  <p>Area(A)= 0.5 x b x h</p>
+                  <p>
+                    <input type="text" class="bg-gray-200 w-24 px-2 border text-xl" id="triangle-base-input" placeholder="base">
+                    <span>cm</span>
+                    <input type="text" class="bg-gray-200 w-24 px-2 border text-xl" id="triangle-height-input" placeholder="height">
+                    <span>cm</span>
+                  </p>
+                  <p>Area: <span id="area-span">0</span> cm<sup>2</sup></p>
+                  
+                  <div class="card-actions w-full">
+                    <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+        <div>
+            <h1 class="text-4xl font-bold">Calculation Area</h1>
+            <div id="calculation-area">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+
+    <script src="geometry.js"></script>
+</body>
+</html>
