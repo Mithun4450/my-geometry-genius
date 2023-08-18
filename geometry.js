@@ -42,3 +42,34 @@ function calculateTriangleArea(){
     setTextValue('area-span', area);
     addToCalculationArea('Triangle', area);
 }
+
+
+function calculateRectangleArea(){
+    const width = getInputValue('rectangle-base-input');
+    const height = getInputValue('rectangle-height-input');
+    
+    if(isNaN(width) || isNaN(height)){
+        alert('Please provide number');
+        return;
+    }
+    
+    const area = width * height;
+    
+    setTextValue('area-span', area);
+    addToCalculationArea('Rectangle', area);
+}
+
+function calculateParallelogramArea(){
+    const base = getInputValue('parallelogram-base-input');
+    const height = getInputValue('parallelogram-height-input');
+    
+    if(isNaN(base) || isNaN(height)){
+        alert('Please provide number');
+        return;
+    }
+    
+    const area = base * height;
+    
+    setTextValue('area-span', area);
+    addToCalculationArea('Parallelogram', area);
+}
